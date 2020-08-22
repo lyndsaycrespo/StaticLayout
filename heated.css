@@ -1,0 +1,265 @@
+/*GENERAL SETUP*/
+
+body {
+    background-color: white;
+    width: 65vw;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+/*TYPOGRAPHY*/
+
+h2, h3, h4, h5, h6, li, .topBar {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.topBar{
+    color:gray; 
+    font-weight: 300;
+}
+.topBar a {
+    color:#4F724E;
+    font-size: 14pt;
+    font-weight: 300;
+    text-decoration: none; 
+}
+h2{
+    font-size: 20pt;
+    color:gray; 
+    font-weight: 400;
+} 
+h3 a {
+    font-size: 20pt;
+    color:black; 
+    font-weight: 700;
+} 
+h4 a {
+    font-size: 18pt;
+    color:gray; 
+    font-weight: 300;
+} 
+h5 a {
+    font-size: 14pt;
+    color:#4F724E;
+    font-weight: 300; 
+} 
+h6{
+    font-size: 14pt;
+    color:gray; 
+    font-weight: 300;
+} 
+li{
+    color: gray;
+    font-size: 15pt;
+    font-weight: 300;
+    line-height: 0.25;
+    text-transform: uppercase;
+}
+
+.headlineArticle a {
+    text-decoration: none; 
+}
+.gridContainer a {
+    text-decoration: none;
+}
+nav a {
+    color: gray;
+    text-decoration: none;
+}
+
+/*HEADER LAYOUT*/
+
+header{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.topBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+#MediumM{
+    flex: 4;
+}
+#topLinkSignIn{
+    /* flex: 1; */
+    margin-right: 25px;
+}
+#topLinkGetStarted{
+    /* flex: 1; */
+    border: rounded;
+    border-style: solid;
+    border-color: #4F724E;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+nav{
+    height: 50px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    border-bottom-width: 1px; 
+    border-bottom-style: solid;
+    border-bottom-color: lightgrey;
+}
+nav ul{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+nav li {
+    list-style-type: none;
+}
+
+#follow{
+    color:#4F724E !important;
+    border: 1px solid #4F724E;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*MAIN LAYOUT*/
+
+.headlineArticle{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.headlineImage{
+    flex-grow: 2;
+    /* width: 674px; */
+    height: 350px; 
+    object-fit: none;
+}
+.headlineImage img {
+    /* max-width:100%; */
+    width: 672px;
+    height: 350px;
+    object-fit: cover;
+}
+.headlineText {
+    width: 60%;
+    padding: 3%;
+}
+.debbie{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    margin-top: 20px;
+    width: 70%;
+}
+.purpleD{
+    flex-grow: 1;
+}
+.debbieText {
+    height: 60px;
+}
+.gridContainer{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+    row-gap: 80px;
+    align-items: start;
+}
+.smallArticle {
+    object-fit: contain;
+    height: 272px;
+    width: 50%;
+}
+.smallArticle img {
+    height: 272px;
+    width: 200%;
+    object-fit: cover;
+}
+.oaxaca {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.manhattan {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.chicken {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.apple {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+.sen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    margin-top: 20px;
+}
+.senImage {
+    flex-grow: 0.05;
+}
+.senText {
+    height: 60px;
+}
+.julia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    margin-top: 20px;
+}
+.juliaImage {
+    flex-grow: 0.05;
+}
+.juliaText {
+    height: 60px;
+}
+.mark {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    margin-top: 20px;
+}
+.markImage {
+    flex-grow: 0.05;
+}
+.markText {
+    height: 60px;
+}
+.bittman {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    margin-top: 20px;
+}
+.bittmanImage {
+    flex-grow: 0.05;
+}
+.bittmanText {
+    height: 60px;
+}
+
+
+
